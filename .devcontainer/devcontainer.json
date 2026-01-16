@@ -77,6 +77,8 @@
                 "mhutchie.git-graph",
                 "tamasfe.even-better-toml",
                 "oderwat.indent-rainbow",
+                "-dbaeumer.vscode-eslint",
+                "-ms-vscode.cpptools"
             ]
         }
     },
