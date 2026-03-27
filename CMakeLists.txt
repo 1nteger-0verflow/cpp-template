@@ -1,8 +1,5 @@
 cmake_minimum_required(VERSION 3.15...3.26)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 project(sample LANGUAGES CXX)
 
 # guard against in-source builds
@@ -24,11 +21,7 @@ target_compile_options(
         -Wall
         -Wfatal-errors
         -Wundef
-        -fPIC
-        $<$<CONFIG:Release>:
-        -O3>
-        $<$<CONFIG:Debug>:
-        -O0
-        -fstandalone-debug>
+        $<$<CONFIG:Release>:-O3>
+        $<$<CONFIG:Debug>:-O0 -g>
 )
 
