@@ -1,4 +1,6 @@
 
+HeaderFilterRegex: '.*'
+
 Checks: '-*,
     clang-diagnostic-*,
     -clang-diagnostic-format,
